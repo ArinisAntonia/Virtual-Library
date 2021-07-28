@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="440.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="add_title" layoutX="93.0" layoutY="31.0" prefHeight="25.0" prefWidth="317.0" />
+      <TextField fx:id="add_author" layoutX="93.0" layoutY="76.0" prefHeight="25.0" prefWidth="317.0" />
+      <TextField fx:id="add_ISBN" layoutX="93.0" layoutY="127.0" prefHeight="25.0" prefWidth="317.0" />
+      <TextField fx:id="add_publisher" layoutX="93.0" layoutY="178.0" prefHeight="25.0" prefWidth="317.0" />
+      <Text layoutX="41.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <Text layoutX="33.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+      <Text layoutX="39.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" />
+      <Text layoutX="27.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher" />
+      <Button fx:id="cancel_add_book" layoutX="37.0" layoutY="240.0" mnemonicParsing="false" onAction="#change_scene" text="Cancel" />
+      <Button fx:id="add_book_btn_scene" layoutX="138.0" layoutY="240.0" mnemonicParsing="false" onAction="#add_book" text="Add book" />
+      <Text fx:id="Error_text" fill="RED" layoutX="240.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

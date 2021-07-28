@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="440.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowBook">
+    <TextField fx:id="show_title" layoutX="93.0" layoutY="31.0" prefHeight="25.0" prefWidth="317.0" />
+    <TextField fx:id="show_author" layoutX="93.0" layoutY="76.0" prefHeight="25.0" prefWidth="317.0" />
+    <TextField fx:id="show_ISBN" layoutX="93.0" layoutY="127.0" prefHeight="25.0" prefWidth="317.0" />
+    <TextField fx:id="show_publisher" layoutX="93.0" layoutY="178.0" prefHeight="25.0" prefWidth="317.0" />
+    <Text layoutX="41.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+    <Text layoutX="33.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+    <Text layoutX="39.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" />
+    <Text layoutX="27.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher" />
+   <Button fx:id="back_to_primary" layoutX="43.0" layoutY="326.0" mnemonicParsing="false" onAction="#change_scene" text="Back" />
+   <Button layoutX="123.0" layoutY="326.0" mnemonicParsing="false" onAction="#edit_book" text="Edit book" />
+   <Text fx:id="returndate_text" layoutX="20.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" visible="false" />
+   <CheckBox fx:id="available_checkbox" layoutX="37.0" layoutY="225.0" mnemonicParsing="false" onAction="#hide_returndate" selected="true" text="Available" />
+   <DatePicker fx:id="show_returndate" layoutX="93.0" layoutY="266.0" prefHeight="25.0" prefWidth="317.0" visible="false" />
+   <Text fx:id="Error_text" fill="RED" layoutX="220.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+
+</AnchorPane>

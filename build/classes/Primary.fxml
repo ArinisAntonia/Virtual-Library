@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="667.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TableView fx:id="tbData" layoutY="105.0" prefHeight="395.0" prefWidth="515.0">
+        <columns>
+            <TableColumn fx:id="title" prefWidth="125.0" text="Title" />
+            <TableColumn fx:id="author" prefWidth="125.0" text="Author" />
+            <TableColumn fx:id="ISBN" prefWidth="125.0" text="ISBN" />
+            <TableColumn fx:id="available" prefWidth="125.0" text="Available" />
+        </columns>
+      </TableView>
+      <Button fx:id="add_book_scene" layoutX="554.0" layoutY="105.0" mnemonicParsing="false" onAction="#change_scene" text="Add book" />
+      <MeshView />
+      <Text layoutX="26.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cauta dupa:" />
+      <ComboBox fx:id="combobox_filter" layoutX="107.0" layoutY="10.0" prefWidth="150.0" />
+      <TextField fx:id="filter_text" layoutX="279.0" layoutY="10.0" prefHeight="25.0" prefWidth="258.0" />
+      <Button layoutX="561.0" layoutY="10.0" mnemonicParsing="false" onAction="#filter_search" text="Cauta" />
+      <Button layoutX="525.0" layoutY="150.0" mnemonicParsing="false" onAction="#delete_selected_book" prefWidth="128.0" text="Delete selected book" />
+      <Button fx:id="show_book_btn" layoutX="527.0" layoutY="200.0" mnemonicParsing="false" onAction="#change_scene" text="Show selected book" />
+      <Button fx:id="rented_books_scene" layoutX="530.0" layoutY="250.0" mnemonicParsing="false" onAction="#change_scene" text="Show rented books" />
+   </children>
+</AnchorPane>
